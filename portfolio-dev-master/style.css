@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+body{
+    background-color: black;
+    height: 100vh;
+
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(152, 152, 152);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    
+}
+header a:hover{
+    color: brown;
+    transform: scale(1.10);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+.btn-contato button{
+    padding: 10px 40px ;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: brown;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px rgba(165, 42, 42, 0.722);
+    transform: scale(1.10);
+}
+.img-logo{
+    width: 50%;
+    height: 50%;
+}
+h2.titulo{
+    color: white;
+    font-size: 43px;
+    text-align: center;
+
+}
+h2.titulo span{
+    color: brown;
+}
+section.topo-do-site{
+    padding: 40px 4%;
+
+}
+.topo-do-site .txt-topo-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+  
+}
+.topo-do-site h1{
+    color: white;
+    font-size: 42px;
+    line-height: 40px;
+}
+.topo-do-site h1:hover{
+    color: rgba(165, 42, 42, 0.919);
+}
+.topo-do-site .txt-topo-site p{
+    color: white;
+    margin: 40px 0;
+    width: 70%;
+
+}
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    border-radius: 50%;
+
+}
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+    
+}
+
+/*estilo de especialidade*/
+
+section.especialidades{
+    padding: 40px 4%;
+}
+section.especialidades .flex{
+    gap: 60px;
+}
+
+section.especialidades .especialidades-box{
+    color: white;
+    padding: 40px;
+    margin-top: 50px;
+    border-radius: 20px;
+    transition: .2s;
+
+}
+section.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff86;
+}
+
+section.especialidades .especialidades-box i{
+    font-size: 90px;
+    color: brown;
+    
+}
+section.especialidades .especialidades-box h3{
+    font-size: 30px;
+    padding: 20px 0px ;
+}
+#especialidades-carousel {
+    margin-top: 20px;
+}
+
+/*css do sobre*/
+
+section.sobre{
+    padding: 80px 4%;
+}
+section.sobre .flex{
+    gap: 60px;
+    align-items: center;
+}
+
+.sobre .txt-sobre{
+    color: white;
+}
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+
+}
+.sobre .txt-sobre h2 span{
+    color: brown;
+    display: block;
+}
+.sobre .txt-sobre p{
+    text-align: justify;
+}
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: brown;
+    font-size: 26px;
+    cursor: pointer;
+    transition: .2s;
+}
+.sobre .txt-sobre .btn-social button:hover{
+    box-shadow: 0px 0px 8px rgba(165, 42, 42, 0.722);
+    transform: scale(1.10);
+}
+.sobre .txt-sobre .btn-social{
+    margin-top: 30px;
+   
+}
+.sobre .txt-sobre .btn-social a{
+    padding-left: 20px;
+}
+
+.sobre .sobre-img{
+    object-fit: cover; 
+}
+
+/*CSS PORTFOLIO*/
+
+section.Portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 5px #ffffff28;
+}
+section.Portfolio .flex{
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.img-port{
+    width: 380px;
+    height: 460px;
+    background-size: cover;
+    background-position: 0% 100%;
+    transition: 8s;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+   
+}
+.img-port:hover{
+    background-position: 100% 0%; 
+
+    
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #000000b8;
+    color: white;
+    opacity: 0;
+    transition: .5s;
+}
+.overlay:hover{
+    opacity: 1;
+}
+.overlay > a{
+    color: white;
+    overflow: none;
+    text-decoration: none;
+}
+
+/*css formulario*/
+
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+form input, form textarea{
+    width: 100%;
+    background-color: rgba(63, 63, 63, 0.938);
+    border: none;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+}
+form input::placeholder{
+    color: brown;
+}
+form textarea{
+    height: 200px;
+    resize: none;
+}
+form textarea::placeholder{
+    color: brown;
+}
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+
+}
+form .btn-enviar input{
+    width: 120px;
+    background-color: brown;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .2s;
+    
+}
+form .btn-enviar input:hover{
+    color: brown;
+    background-color: white;
+}
+
+
+/* olhar o video de como deixar o formulario valido para receber informaçoes, esta na parte 6*/
+
+@media screen and (max-width:1020px){
+    .flex{
+        flex-direction: column;
+    }
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+    h2.titulo{
+        font-size: 35px;
+    }
+    /*cabeçalho*/
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+    section.topo-do-site{
+        padding: 10px 8%;
+    }
+    .topo-do-site h1{
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    .topo-do-site .img-topo-site img{
+        width: 90%;
+    }
+    section.especialidades{
+        padding: 40px 8%;
+    }
+    section.sobre{
+        padding: 80px 8%;
+    }
+    .sobre .txt-sobre h2{
+        font-size: 35px;
+        line-height: 35px;
+        text-align: center;
+    }
+    .btn-social{
+        text-align: center;
+    }
+    section.portfolio{
+        padding: 80px 8%;
+    }
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    section.portfolio .flex{
+        gap: 60px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
