@@ -248,6 +248,11 @@ section.Portfolio .flex{
 .overlay:hover{
     opacity: 1;
 }
+.overlay > a{
+    color: white;
+    overflow: none;
+    text-decoration: none;
+}
 
 /*css formulario*/
 
@@ -356,7 +361,6 @@ form .btn-enviar input:hover{
         gap: 60px;
     }
 }
-
 
 
 
